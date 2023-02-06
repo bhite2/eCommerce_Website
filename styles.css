@@ -54,6 +54,12 @@ nav li {
     justify-content: flex-end;
 }
 
+.about_us {
+    position: relative;
+    width: auto;
+    text-align: left;
+}
+
 .about_us img {
     width: 300px;
     height: 300px;
@@ -61,9 +67,9 @@ nav li {
 .our_products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 30px;
+    column-gap: 65px;
     row-gap: 70px;
-    position: absolute;
+    position: fixed;
 }
 
 .our_products a {
@@ -105,7 +111,7 @@ footer {
     background-color: #BF7631;
     color: white;
     max-width: fit-content;
-    position: absolute;
+    position: fixed;
 }
 
 footer img {
