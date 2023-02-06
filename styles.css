@@ -2,18 +2,39 @@ html{
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:white;
-    color: black;
-    margin: 0;
-}
-
 header {
     background-color: white;
     position: relative;
     padding: 1rem;
 }
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:white;
+    color: black;
+    margin: 1rem, auto;
+    width: 80%;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-size: 20;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 hr {
     color: black;
@@ -21,6 +42,13 @@ hr {
     width: 10%; 
     height: 5px;
     margin-left: 0;
+}
+
+nav {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
 }
 
 nav hr {
@@ -32,7 +60,7 @@ nav hr {
 }
 nav ul {
     list-style-type: none;
-    position: relative
+    width: 100%;
 }
 
 nav li {
@@ -65,8 +93,8 @@ nav li {
     float: left;
 }
 
-.about_us div{
-    position: relative;
+.image2 {
+    float: right;
 }
 .our_products {
     display: grid;
@@ -83,8 +111,8 @@ nav li {
 
 .our_products p {
     width: 300px;
-    height: 300px;
-    margin: 0;
+    height: 100px;
+    margin: 0.5rem;
 }
 
 .our_products img {
@@ -111,20 +139,15 @@ nav li {
     outline: none;
     align-items: right;
 }
-footer {
-    background-color: #BF7631;
-    color: white;
-    max-width: fit-content;
-    position: fixed;
-}
 
-footer img {
-    width: 20px;
-    height: 20px;
-}
-
-footer p {
+.footer {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #bf7631;
+  }
+  
+  .footer li {
     display: inline;
-    justify-content: space-around;
-}
+  }
 
