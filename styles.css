@@ -1,0 +1,104 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:white;
+    color: black;
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    position: relative;
+    padding: 1rem;
+}
+
+hr {
+    color: black;
+    background: black; 
+    width: 75%; 
+    height: 5px;
+    margin-left: 0;
+   }
+
+nav div {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    position: absolute;
+    margin:auto
+}
+
+nav li {
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.logo {
+    position: absolute;
+    text-align: center;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    justify-items: center;
+}
+
+.search-container {
+    float: right;
+}
+.about_us {
+    padding-top: 30px;
+}
+
+.about_us img {
+    width: 300px;
+    height: 300px;
+}
+.our_products div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.our_products p {
+    width: 300px;
+    height: 300px;
+}
+
+.our_products img {
+    width: 200px;
+    height: 200px;
+}
+
+.our_products button{
+    background-color: #BF7631;
+    color: white;
+    border: none;
+    outline: none;
+    align-items: right;
+}
+
+.contact_us label{
+    align-items: center;
+}
+.contact_us button{
+    background-color: #BF7631;
+    color: white;
+    border: none;
+    outline: none;
+    align-items: right;
+}
+footer {
+    background-color: #BF7631;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
