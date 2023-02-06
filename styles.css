@@ -18,19 +18,21 @@ header {
 hr {
     color: black;
     background: black; 
-    width: 75%; 
+    width: 10%; 
     height: 5px;
     margin-left: 0;
-   }
-
-nav div {
-    float: right;
 }
 
+nav hr {
+    color: black;
+    background: black;
+    width:auto;
+    height: 5px;
+    margin-left: .5rem;
+}
 nav ul {
     list-style-type: none;
-    position: absolute;
-    margin:auto
+    position: relative
 }
 
 nav li {
@@ -39,42 +41,45 @@ nav li {
 }
 
 .logo {
-    position: absolute;
-    text-align: center;
+    display: inline-flex;
 }
 
 .logo img {
     width: 30px;
     height: 30px;
-    justify-items: center;
 }
 
 .search-container {
-    float: right;
-}
-.about_us {
-    padding-top: 30px;
+    display: inline;
+    justify-content: flex-end;
 }
 
 .about_us img {
     width: 300px;
     height: 300px;
 }
-.our_products div {
+.our_products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+    column-gap: 30px;
+    row-gap: 70px;
+    position: absolute;
+}
+
+.our_products a {
+    color: #BF7631;
+    position: relative;
 }
 
 .our_products p {
     width: 300px;
     height: 300px;
+    margin: 0;
 }
 
 .our_products img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 
 .our_products button{
@@ -82,7 +87,8 @@ nav li {
     color: white;
     border: none;
     outline: none;
-    align-items: right;
+    width: 100px;
+    height: 15px;
 }
 
 .contact_us label{
@@ -98,7 +104,17 @@ nav li {
 footer {
     background-color: #BF7631;
     color: white;
-    align-items: center;
-    justify-content: space-between;
+    max-width: fit-content;
+    position: absolute;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+}
+
+footer p {
+    display: inline;
+    justify-content: space-around;
 }
 
